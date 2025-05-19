@@ -1,24 +1,40 @@
-# Arabic PDF Question-Answering Chatbot (BookBuddy AI)
+# BookBuddy AI — Arabic PDF Question Answering Assistant
+BookBuddy AI is an intelligent assistant designed to help Arabic-speaking users interact with Arabic content in PDF files. It is ideal for students, researchers, and casual readers who want to extract knowledge from books, reports, or historical documents—without reading the entire text.
 
-**Overview:** BookBuddy AI is an intelligent assistant designed to help Arabic-speaking users ask questions about Arabic content in PDF files. It's ideal for students, researchers, and casual readers who want to extract knowledge from books, reports, or historical documents—without having to read the entire text.
+**Key Features**
+**PDF Upload:** Supports Arabic-language books, articles, and documents in PDF format.
 
-**Key Features:**
-- *PDF Upload:* Users can upload any Arabic PDF—books, articles, or documents.
-- *Smart Q&A:* The chatbot allows users to type in a question and get accurate, concise answers based on the content of the uploaded PDF.
-- *Context-Aware:* Users can optionally specify the last page they’ve read to avoid spoilers or limit the scope of the answer.
-- *RAG-based Architecture:*
-  * Uses Sentence Transformers to retrieve relevant text chunks from the PDF.
-  * Powered by LLaMA 3.2B (Unsloth) for generating high-quality, Arabic natural language answers.
+**Smart Q&A:** Users can ask natural-language questions and receive accurate, context-aware answers based on the document's content.
 
-- *Arabic-Focused:* All prompts, processing, and answers are tailored for Modern Standard Arabic.
-- *Spoiler Protection:* If a user asks a question beyond what they’ve read, the chatbot refuses to answer and politely warns the user.
-- *Modern UI/UX:* The React frontend is styled with soft AI-themed colors for readability and user comfort.
+**Context Awareness:** Users may specify the last page read to restrict answers to known content and avoid spoilers.
 
-**Architecture Summary:**
-- *Frontend:* React.js (with user-friendly forms for file upload, question input, and page selection)
-- *Backend:* Flask API serving:
-  * PDF chunking
-  * Embedding with SentenceTransformers
-  * Retrieval using FAISS
-  * Response generation with a locally hosted LLaMA 3.2B
-- *Deployment:* Designed for easy use on Google Colab with automatic Cloudflare Tunnel integration, providing public HTTPS access to the backend without any server deployment or Docker setup.
+**Arabic-Focused Design:** All prompts, processing, and answers are optimized for Modern Standard Arabic.
+
+**Spoiler Protection:** The assistant politely refuses to answer questions that go beyond the user's selected page.
+
+**Architecture**
+**Retrieval-Augmented Generation (RAG):**
+
+**Retrieval:** Relevant text chunks are retrieved using SentenceTransformers and FAISS.
+
+**Generation:** Responses are generated using a locally hosted LLaMA 3.2B (via Unsloth), optimized for Arabic.
+
+**System Overview**
+**Frontend:**
+Built with React.js, featuring user-friendly components for file upload, question input, and page selection.
+
+**Backend:**
+**Flask API providing:**
+
+PDF chunking and preprocessing
+
+Embedding with SentenceTransformers
+
+Semantic retrieval with FAISS
+
+Arabic answer generation via LLaMA 3.2B
+
+**Deployment:**
+Designed for Google Colab with automatic Cloudflare Tunnel integration, enabling public HTTPS access without server configuration or Docker setup.
+
+BookBuddy AI contributes to the advancement of Arabic-language NLP tools, offering a more interactive and accessible way to explore Arabic content through AI-powered question answering.
