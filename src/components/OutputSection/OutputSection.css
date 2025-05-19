@@ -1,0 +1,63 @@
+.output-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.output-box {
+  margin-top: 1rem;
+  background: #f6f6f6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
+/* Button wrapper at the bottom */
+.output-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Submit button */
+.generate-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 120, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #0056b3;
+}
+
+/* TTS button */
+.tts-btn {
+  background-color: #00a597;
+  color: white;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 165, 151, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.tts-btn:hover {
+  background-color: #007d6f;
+}
